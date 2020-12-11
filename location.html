@@ -15,12 +15,23 @@
       embedded
       arjs="sourceType: webcam; debugUIEnabled: false;"
     >
-      <a-text
+      <!-- <a-text
         value="This content will always face you."
         look-at="[gps-camera]"
         scale="50 50 50"
         gps-entity-place="latitude: 39.273846088558585; longitude: -76.6146330798878;" 
-      ></a-text>
+      ></a-text> -->
+      <a-assets>
+        <img id="my-image" src="./arjs3-image-tracking.jpg">
+      </a-assets>
+    
+      <!-- Using the asset management system. -->
+      <a-image 
+        src="#my-image"
+        look-at="[gps-camera]"
+        scale="50 50 50"
+        gps-entity-place="latitude: 39.273846088558585; longitude: -76.6146330798878;"   
+      ></a-image>
       <a-camera gps-camera rotation-reader> </a-camera>
     </a-scene>
   </body>
