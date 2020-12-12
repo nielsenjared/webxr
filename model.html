@@ -15,11 +15,12 @@
         <a-asset-item id="spinosaurus" src="rubber-duck.glb"></a-asset-item>
       </a-assets>
     
-      <a-camera position="0 1.2 0"></a-camera>
+      <a-camera position="0 0 0"></a-camera>
     
+      <a-light type="point" color="white" position="0 5 0"></a-light>    </a-scene>
       <!-- 2D environment omitted for simplicity -->
     
-      <a-entity id="dino" position="0 0 1" scale="0.5 0.5 0.5">
+      <a-entity id="dino" position="0 0 -2" scale="0.5 0.5 0.5">
         <a-entity 
           position="0 0 0" 
           rotation="0 0 0"
@@ -29,6 +30,5 @@
       </a-entity>
     
       <!-- Lights configuration omitted for simplicity -->
-      <a-light type="point" color="white" position="0 5 0"></a-light>    </a-scene>
   </body>
 </html>
